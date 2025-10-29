@@ -14,8 +14,15 @@ public class CustomList {
         cities.add(city);
     }
 
-    
-
     // Will be implemented later using TDD (leave blank for now)
     // public boolean hasCity(City city) { ... }
+
+    public boolean hasCity(City city) {
+        for (City city_in_list : cities) {
+            if (city_in_list.equals(city)) {
+                return true;
+            };
+        }
+        return false;
+    }
 }
