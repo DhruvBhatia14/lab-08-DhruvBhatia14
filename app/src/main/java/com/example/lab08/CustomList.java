@@ -25,4 +25,11 @@ public class CustomList {
         }
         return false;
     }
+
+    public void delete(City city) {
+        if(!this.hasCity(city)) {
+            throw new IllegalArgumentException();
+        }
+        cities.remove(city);
+    }
 }

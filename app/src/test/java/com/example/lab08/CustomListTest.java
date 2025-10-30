@@ -17,7 +17,7 @@ public class CustomListTest {
         CustomList cityList = new CustomList();
         // This pushes down the original city
         City city = new City("Charlottetown", "Prince Edward Island");
-        cityList.add(city);
+        cityList.addCity(city);
 
         cityList.delete(city);
         assertFalse(cityList.hasCity(city));
@@ -31,7 +31,7 @@ public class CustomListTest {
         });
 
         City city = new City("Charlottetown", "Prince Edward Island");
-        cityList.add(city);
+        cityList.addCity(city);
 
         cityList.delete(city);
         assertFalse(cityList.hasCity(city));
