@@ -41,7 +41,7 @@ public class CustomListTest {
     void testCountCities() {
         CustomList cityList = new CustomList();
 
-        assertEquals(1, cityList.countCities());
+        assertEquals(0, cityList.countCities());
 
         // This pushes down the original city
         City city = new City("Charlottetown", "Prince Edward Island");
