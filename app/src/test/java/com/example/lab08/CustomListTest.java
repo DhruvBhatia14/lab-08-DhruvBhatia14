@@ -36,4 +36,17 @@ public class CustomListTest {
         cityList.delete(city);
         assertFalse(cityList.hasCity(city));
     }
+
+    @Test
+    void testCountCities() {
+        CustomList cityList = new CustomList();
+
+        assertEquals(1, cityList.countCities());
+
+        // This pushes down the original city
+        City city = new City("Charlottetown", "Prince Edward Island");
+        cityList.addCity(city);
+
+        assertEquals(2, cityList.countCities());
+    }
 }
